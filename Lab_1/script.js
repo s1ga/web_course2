@@ -4,6 +4,7 @@ let num = document.querySelector('input')
 let answers = document.getElementById('answers')
 
 button.addEventListener('click', () => {
+    console.log(num)
     if (num.value) {
         console.log(num.value)
         arr.push(+num.value)
