@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="moduleApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Lab 5</title>
+</head>
+<body>
+
+<div class="container" ng-controller="moduleController">
+
+    <h1>Practical work 5</h1>
+
+    <div class="module">
+        <div ng-if="!loading">
+            <ng-include src="'templates/table.html'"></ng-include>
+
+            <h3 ng-if="!students.length">There are no students</h3>
+
+            <div class="module__mark">Average mark: {{ students.length ? getMark() : 0 | number:2 }}</div>
+        </div>
+
+        <h3 ng-if="loading">Loading...</h3>
+    </div>
+
+    <div class="module__append">
+        <ng-include src="'templates/form.html'"></ng-include>
+    </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,15 @@
+<table ng-if="students.length" id="module__table">
+    <tr>
+        <th ng-repeat="key in keys">{{ key | uppercase }}</th>
+    </tr>
+    <tr ng-repeat="student in students">
+        <td>{{ student.name }}</td>
+        <td>{{ student.surname }}</td>
+        <td>{{ student.age }}</td>
+        <td class="mark">{{ student.mark }}</td>
+        <td class="action">
+            <button class="edit__btn" ng-click="edit($index)">Edit</button>
+            <button class="remove__btn" ng-click="remove($index)">Remove</button>
+        </td>
+    </tr>
+</table>

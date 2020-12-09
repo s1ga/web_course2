@@ -1,0 +1,18 @@
+{
+  "name": "web-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Siarhei Kharlanau <s.v.harlanov@gmail.com>",
+  "license": "ISC"
+}

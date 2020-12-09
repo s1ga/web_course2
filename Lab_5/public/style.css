@@ -1,0 +1,95 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+table {
+    border: 1px solid #000;
+}
+
+.module__append {
+    margin-top: 50px;
+}
+
+.module__mark {
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.module__append__wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.module__append__form {
+    margin-bottom: 15px;
+}
+
+.module__append__form__input {
+    width: 120px;
+    margin-right: .2rem;
+}
+
+.module__append__form__btn {
+    cursor: pointer;
+    display: block;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #26a69a;
+    color:#fff;
+    border:0;
+    transition: ease-out .3s;
+    outline: none;
+}
+
+.module__append__form__btn:hover,
+.module__append__form__btn:active {
+    opacity: .6;
+}
+
+.edit__btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    border-radius: 8px;
+    background-color: #26a69a;
+    color:#fff;
+    border:0;
+    transition: ease-out .3s;
+    margin-right: 5px;
+    outline: none;
+}
+
+.edit__btn:hover,
+.edit__btn:active {
+    opacity: .6;
+}
+
+.remove__btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 65px;
+    height: 20px;
+    border-radius: 8px;
+    background-color: #ff0000;
+    color:#fff;
+    border:0;
+    transition: ease-out .3s;
+    margin-right: 10px;
+    outline: none;
+}
+
+.remove__btn:hover,
+.remove__btn:active {
+    opacity: .6;
+}
+
+.error {
+    border-radius: 5px;
+    background-color: red;
+    color: #fff;
+    font-size: 16px;
+}
