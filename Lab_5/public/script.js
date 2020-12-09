@@ -44,13 +44,13 @@ module.service('moduleService', function($http) {
     }
 })
 
-module.controller('moduleController', ($scope, moduleService,$http) => {
+module.controller('moduleController', ($scope, moduleService) => {
     $scope.loading = true
     $scope.validate = true
     $scope.students = []
 
     moduleService.get().then(res => {
-        res.data.concat().forEach(i => $scope.students.push(i))
+        $scope.students = res.data.concat()
         if ($scope.students.length) {
             $scope.keys = [...Object.keys($scope.students[0]), 'action']
         }
