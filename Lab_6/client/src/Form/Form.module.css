@@ -1,0 +1,37 @@
+.form__wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.append__btn {
+    cursor: pointer;
+    display: block;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #26a69a;
+    color:#fff;
+    border:0;
+    transition: ease-out .3s;
+    outline: none;
+}
+
+.append__btn:hover,
+.append__btn:active {
+    opacity: .6;
+}
+
+.form__input {
+    width: 120px;
+    margin-right: .2rem;
+}
+
+.error {
+    width: 300px;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: red;
+    color: #fff;
+    font-size: 16px;
+}
